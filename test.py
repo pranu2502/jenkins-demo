@@ -13,7 +13,7 @@ def test():
   print("2. add(12,2)")
   print("pass")
 
-  res = div(12,3)
+  res = div(12,0)
   expected = "Inf"
   assert res == expected
   print("3. div(12,0)")
