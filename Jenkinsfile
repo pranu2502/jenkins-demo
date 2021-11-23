@@ -8,13 +8,13 @@ agent any
         }
         stage('exec main') {
             steps {
-		sh "chmod u+x main.py"
+		sh "chmod u+x prog.py"
                 sh "python3 prog.py"
             }
         }
      stage('run tests') {
             steps {
-		sh "chmod u+x spec.py"
+		sh "chmod u+x test.py"
                 sh "python3 test.py"
             }
         }
